@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible"
+		content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+    <link rel="icon" href="calculator.svg">
+</head>
+<body>
+    <div class="container">
+        <div class="calc-box">
+            <form name="calculator">
+                <input type="text" id="display" placeholder="0" readonly>
+                <br>
+                <input type="button" class="button" value="7" onclick="btnClick(7)">
+                <input type="button" class="button" value="8" onclick="btnClick(6)">
+                <input type="button" class="button" value="9" onclick="btnClick(5)">
+                <input type="button"  class="button math-btn" value="+" onclick="btnClick('+')">
+                <br>
+                <input type="button" class="button" value="4" onclick="btnClick(4)">
+                <input type="button" class="button" value="5" onclick="btnClick(5)">
+                <input type="button" class="button" value="6" onclick="btnClick(6)">
+                <input type="button"  class="button math-btn" value="-" onclick="btnClick('-')">
+                <br>
+                <input type="button" class="button" value="1" onclick="btnClick(1)">
+                <input type="button" class="button" value="2" onclick="btnClick(2)">
+                <input type="button" class="button" value="3" onclick="btnClick(3)">
+                <input type="button"  class="button math-btn" value="x" onclick="btnClick('x')">
+                <br>
+                <input type="button" class="bigBtn" value="0" onclick="btnClick(0)">
+                <input type="button" class="bigBtn" value="." onclick="btnClick('.')">
+                <input type="button" class="button math-btn" value="/" onclick="btnClick('/')">
+                <br>
+                <input type="button" class="clrBtn" value="C" onclick="clearBtn()">
+                <input type="button" class="bigBtn backBtn" value="⌫" onclick="backBtn()">
+                <input type="button" class="button eqlBtn" value="=" onclick="eqlBtn()">
+
+            </form>
+        </div>
+    </div>
+</body>
+</html>
